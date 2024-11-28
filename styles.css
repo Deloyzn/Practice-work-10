@@ -1,11 +1,21 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(./fonts/Raleway-Regular.woff);
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url(./fonts/Raleway-ExtraBold.woff);
+}
+
 *, 
 *::before, 
 *::after {
     box-sizing: border-box;
 }
-
-body, 
-html {
+ 
+html,
+body {
     position: relative;
     height: 100%;
     width: 100%;
@@ -42,15 +52,11 @@ h1:hover + video {
 .title {
     display: flex;
     text-align: center;
-    text-transform: uppercase;
     align-items: flex-end;
     font-family: "Raleway-Bold";
     font-size: 110px;
-   width: 739px;
-   margin-top: 60px;
-   margin: 0 auto;
-  
-
+    width: 600px;
+    margin: 0 auto;
 }
 
 .title:hover::before{
@@ -62,13 +68,13 @@ h1:hover + video {
     padding: 1vw 1vw;
     color: #000000;
     z-index: 3;
-    width: 42vw;
-    height: 13vh;
-    left: 47vw;
+    width: auto;
+    height: auto;
+    left: 53vw;
     top: 8vw;
     background: #FFFFFF;
     border: 0.2vw solid #000000;
     border-radius: 1vw;
     box-shadow: 0 0.7vw 0 rgb(0, 0, 0);
-    position: fixed;
+    position: absolute;
 }
